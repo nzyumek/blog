@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   get '/page', to: "white#page"
   get '/graphy', to: "white#graphy"
   get 'inquiry', to: "white#inquiry"

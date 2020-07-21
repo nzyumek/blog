@@ -61,4 +61,5 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   
   config.hosts << "094f566fa34c47d4986402940b686339.vfs.cloud9.us-west-2.amazonaws.com"
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 end
