@@ -1,0 +1,31 @@
+<header class="navbar navbar-expand-lg navbar-light" style="background-color: #FFF;">
+        <%= link_to "White", root_path %>
+        <p>書くためのテーマ</p>
+        <button
+            class = "navbar-toggler"
+            type = "button"
+            data-toggle = "collapse"
+            data-target = "#navbarSupportedContent"
+            aria-controls = "navbarSupportedContent"
+            aria-expanded = "flase"
+            aria-label = "Toggle navigation"
+            >
+        <span class= "navbar-toggler-icon"></span>
+    </button>
+<!-- header がtop-fixed-->    
+        <div class= "collapse navbar-collapse" id= "navbarSupportedContent">
+            <ul class = "navbar-nav ml-auto">
+                <li id="menu-item-444" class="menu-item mr-2">
+                    <%= link_to "ホーム", root_path, style: 'color:#FFFFFF;' ,class:"btn btn-outline-secondary" %>
+                </li>
+                <li id="menu-item-444" class="menu-item mr-2">
+                    <%= link_to "ページ", page_path, style: 'color:#FFFFFF;' ,class:"btn btn-outline-secondary" %>
+                </li>
+                <li id="menu-item-444" class="menu-item mr-2">
+                    <%= link_to "タイポグラフィー", graphy_path , style: 'color:#FFFFFF;' ,class:"btn btn-outline-secondary" %>
+                </li>
+                <li id="menu-item-444" class="menu-item mr-2">
+                    <%= link_to "お問い合わせ", inquiry_path, style: 'color:#FFFFFF;' ,class:"btn btn-outline-secondary" %>
+                </li>
+    </div>
+</header>
