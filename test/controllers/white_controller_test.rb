@@ -2,22 +2,22 @@ require 'test_helper'
 
 class WhiteControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
-    get white_home_url
+    get root_path
     assert_response :success
   end
 
   test "should get page" do
-    get white_page_url
+    get page_url
     assert_response :success
   end
 
   test "should get graphy" do
-    get white_graphy_url
+    get graphy_url
     assert_response :success
   end
 
   test "should get inquiry" do
-    get white_inquiry_url
+    get inquiry_url
     assert_response :success
   end
 
