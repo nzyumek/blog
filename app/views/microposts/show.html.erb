@@ -1,0 +1,33 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+  
+  <div class="col-md-12">
+    <%= image_tag "http://demo.themegraphy.com/write-ja/wp-content/uploads/sites/14/2018/06/cropped-nicole-honeywill-730102-unsplash.jpg" %>
+  </div>
+  
+  <div class="col-md-offset-4 col-md-8 ">
+    <div class="entry-content">
+    <p>
+      <%= @micropost.created_at.strftime("%Y年%m月%d日") %>
+    </p>
+    
+    <h1 class="entry-header">
+      <%= @micropost.title %>
+    </h1>
+    
+    <p class="intro">
+      <%= @micropost.subtitle %>
+    </p>
+    
+    <p>
+      <%= @micropost.content %>
+    </p>
+    </div>
+  </div>
+
+<% if user_signed_in? %>
+  <%= link_to 'Edit', edit_micropost_path(@micropost) %> |
+  <%= link_to 'Back', microposts_path %>
+<% end %>
+
+</div>
