@@ -1,2 +1,4 @@
 class Micropost < ApplicationRecord
+    has_rich_text :content
 end
+
