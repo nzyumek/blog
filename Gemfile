@@ -65,5 +65,5 @@ gem 'fog-aws'
 
 gem 'aws-sdk-s3', require: false
 
-gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.12'
 gem 'actiontext'
